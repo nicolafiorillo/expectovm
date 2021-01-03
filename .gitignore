@@ -1,1 +1,2 @@
-expecto
+src/expecto
+*.o
