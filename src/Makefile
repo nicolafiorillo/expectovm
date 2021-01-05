@@ -1,5 +1,5 @@
 P=expecto
-OBJECTS=vm.o
+OBJECTS=memory.o vm.o
 CFLAGS= -g -Werror -O3 -std=c11
 LDLIBS=
 

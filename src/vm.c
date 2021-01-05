@@ -1,19 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
-#include "headers/vm.h"
+#include "headers/expecto.h"
 
 VM* new_vm() {
-  VM* vm = malloc(sizeof(VM));
-  memset(vm, 0, sizeof(VM));
-
+  VM* vm = evm_malloc(sizeof(VM));
   return vm;
 }
 
 void delete_vm(VM* vm) {
-  memset(vm, 0, sizeof(VM));
-  free(vm);
+  evm_free(vm, sizeof(VM));
 }
 
 void print_vm(VM* vm) {
