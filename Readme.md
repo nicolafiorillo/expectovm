@@ -19,3 +19,49 @@ opcode (8 bits) - 0, 1, 2, 3 operands
 
 Inferno OS:
   http://www.vitanuova.com/inferno/docs.html
+
+## C notes
+
+```
+# gcc erf.c -o erf -lm -g -Wall -03 -std=gnu11
+```
+
+### Flags
+
+| Flag | Description |
+| --- | --- |
+| ```-o {name}``` | set ```{name}``` for final executable |
+| ```-g``` | add debug symbols |
+| ```-std=gnu11``` | conform to C11 and POSIX standards |
+| ```-O3``` | optimization level [0 to 3] (0: no optimization; 3: max optimization) |
+| ```-Wall``` | add all compiler warnings |
+| ```-Werror``` | trait warnings as errors |
+| ```-I{path}``` | add ```{path}``` in include search |
+| ```-L{path}``` | add ```{path}``` in lib search |
+| ```-l{lib}``` | use ```{lib}``` in linking; can be used multiple times; must follow the correct dependencies order |
+| | |
+<br/>
+
+### Environment variables
+CPATH
+LIBRARY_PATH
+LD_LIBRARY_PATH
+C_INCLUDE_PATH
+
+### Tools
+```pkg-config``` finds libraries and generate the correct flags to use them
+
+Examples
+
+Get flags for linking a library:
+```
+# pkg-config --libs libxml-2.0
+-lxml2
+```
+
+Get flags for including a library:
+
+```
+# pkg-config --cflags libxml-2.0
+-I/usr/include/libxml2
+```
