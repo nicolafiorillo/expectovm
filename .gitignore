@@ -1,4 +1,4 @@
 src/expecto
-*.o
+src/*.o
 
 /.vscode
