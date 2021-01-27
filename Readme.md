@@ -43,10 +43,14 @@ Inferno OS:
 <br/>
 
 ### Environment variables
-CPATH
-LIBRARY_PATH
-LD_LIBRARY_PATH
-C_INCLUDE_PATH
+
+Compiler variables:
+
+CPATH LIBRARY_PATH LD_LIBRARY_PATH C_INCLUDE_PATH
+
+```make``` variables:
+
+CFLAGS LDLIBS
 
 ### Tools
 ```pkg-config``` finds libraries and generate the correct flags to use them
