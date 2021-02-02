@@ -2,7 +2,13 @@
 # ENV=TEST make
 
 P = expecto
-OBJECTS = main.o memory.o vm.o test_vm.o
+
+OBJECTS = main.o 			\
+					memory.o 		\
+					vm.o 				\
+					test_main.o \
+					test_vm.o
+
 CFLAGS = -g -Werror -O3 -std=c11 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
 LDFLAGS = -lglib-2.0
 LDLIBS =
