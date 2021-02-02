@@ -27,7 +27,7 @@
     g_test_init(&argc, &argv, NULL);
     printf("Testing...");
 
-    g_test_add("/vm/new", vm_fixture, NULL, vm_setup, vm_new, vm_teardown);
+    g_test_add("/vm/registries_are_zero", vm_fixture, NULL, vm_setup, vm_registries_are_zero, vm_teardown);
 
     return g_test_run();
   }

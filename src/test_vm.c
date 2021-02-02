@@ -13,8 +13,9 @@ void vm_teardown(vm_fixture* fixture, gconstpointer data) {
   delete_vm(fixture->vm);
 }
 
-void vm_new(vm_fixture* fixture, gconstpointer data) {
-  g_assert(fixture->vm->regs[0] == 0);
+void vm_registries_are_zero(vm_fixture* fixture, gconstpointer data) {
+  for(short x = 0; x < EVM_REGISTERS; ++x)
+    g_assert(fixture->vm->regs[x] == 0);
 }
 
 #endif // TEST
