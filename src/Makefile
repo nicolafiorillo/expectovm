@@ -1,5 +1,13 @@
-# make
-# ENV=TEST make
+#
+# Build and run:
+# make clean && make && ./expecto
+#
+# Build test and run:
+# make clean && ENV=TEST make && ./expecto
+#
+# Verify memory issues:
+# valgrind ./expecto
+#
 
 P = expecto
 
@@ -9,7 +17,7 @@ OBJECTS = main.o 			\
 					test_main.o \
 					test_vm.o
 
-CFLAGS = -g -Werror -O3 -std=c11 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+CFLAGS = -g -Werror -O0 -std=c11 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
 LDFLAGS = -lglib-2.0
 LDLIBS =
 CC = gcc

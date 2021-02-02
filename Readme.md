@@ -69,3 +69,11 @@ Get flags for including a library:
 # pkg-config --cflags libxml-2.0
 -I/usr/include/libxml2
 ```
+
+```valgrind``` check for memory management issues
+
+Examples
+
+```
+# valgrind ./my_program
+```
