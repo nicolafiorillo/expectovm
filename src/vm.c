@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "headers/expecto.h"
+#include "expecto.h"
 
 VM* new_vm() {
   VM* vm = evm_malloc(sizeof(VM));

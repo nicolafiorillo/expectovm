@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "headers/expecto.h"
+#include "expecto.h"
 
 void * evm_malloc(size_t __size) {
   void * __ptr = malloc(__size);

@@ -3,7 +3,7 @@
  * Nicola Fiorillo, 2021
  */
 
-#include "headers/expecto.h"
+#include "expecto.h"
 
 #ifndef TEST
 

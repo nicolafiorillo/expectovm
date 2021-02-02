@@ -1,6 +1,6 @@
 #ifdef TEST
 
-#include "headers/expecto.h"
+#include "expecto.h"
 
 #include <glib.h>
 #include "test_vm.h"
